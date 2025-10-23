@@ -47,6 +47,10 @@ app.use((req, res, next)=>{
 app.use('/api/v1/companies', companyRoutes)
 app.use('/api/v1/reviews', reviewRoutes)
 
+app.use('/', (req,res)=>{
+   return res.json("hello")
+})
+
 app.use((req, res, next)=>{
    next(new AppError(`Can't find ${req.originalUrl} on this server`, 404))
 })
