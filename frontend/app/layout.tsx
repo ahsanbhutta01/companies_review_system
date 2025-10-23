@@ -12,6 +12,9 @@ const font = Poppins({
 export const metadata: Metadata = {
   title: "Company Reviews System",
   description: "Companies Review System made by B. Company. Where you can add reviews about the companies",
+  icons: {
+    icon: "/favicon.svg", // or .png
+  },
 };
 
 export default function RootLayout({
