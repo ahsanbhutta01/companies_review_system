@@ -9,12 +9,13 @@ import AppError from './utils/appError.js'
 import companyRoutes from './routes/companyRoute.js'
 import reviewRoutes from './routes/reviewRoutes.js'
 
+// origin: ['http://localhost:3000'],
 
 export const app = express();
 app.use(helmet());
 app.use(
    cors({
-      origin: ['http://localhost:3000'],
+      origin:['https://companies-review-systemfrontend.vercel.app'],
       credentials: true
    })
 );
